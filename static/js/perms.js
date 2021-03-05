@@ -10,5 +10,5 @@ function check(element) {
 }
 
 function goTo() {
-    window.location.href = "https://discord.com/api/oauth2/authorize?client_id=813420881342758913&permissions=" + permission + "&scope=bot";
+    window.location.href = "https://discord.com/api/oauth2/authorize?client_id=813420881342758913&permissions=" + permission + "&redirect_uri=https%3A%2F%2Fasteur.xyz%2Fsuccess&scope=bot";
 }
