@@ -1,0 +1,90 @@
+.invite-container {
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 130px;
+    width: 90%;
+}
+
+#first {
+    float: left;
+    box-sizing: border-box;
+    width: 30%;
+}
+
+#second {
+    float: left;
+    margin-left: 5%;
+    box-sizing: border-box;
+    width: 30%;
+}
+
+#third {
+    float: right;
+    box-sizing: border-box;
+    width: 30%;
+}
+
+h1 {
+    color: white;
+    font-family: NEXON Lv1 Gothic OTF, sans-serif;
+}
+
+.recommend {
+    color: #78d973 !important;
+}
+
+.mandatory {
+    color: #49a1e9 !important;
+}
+
+.unable {
+    color: #ff4f50 !important;
+}
+
+#third > div > a {
+    font-family: GmarketSansLight, sans-serif;
+    font-size: 18px;
+}
+
+.notify {
+    position: static;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.notify > a {
+    font-family: GmarketSansLight, sans-serif;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+.btn {
+    margin: 50px auto;
+}
+
+.complete {
+    position: absolute;
+    margin-top: 200px;
+    width: 100%;
+}
+
+.complete > h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.buttons {
+    width: 100%;
+    text-align: center;
+}
+
+.buttons > a {
+    margin-left: 20px;
+}
+
+.fab {
+    margin-right: 7px;
+    margin-top: 3px;
+    font-size: 23px;
+}

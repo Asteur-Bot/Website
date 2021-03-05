@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>초대하기 | Asteur</title>
+    <link rel="icon" href="assets/images/asteur-notext.png">
+
+    <link rel="stylesheet" href="static/css/font.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/invite.css">
+    <link rel="stylesheet" href="static/css/cbx.css">
+    <link rel="stylesheet" href="static/css/button.css">
+    <script src="static/js/index.js"></script>
+    <script src="static/js/perms.js"></script>
+</head>
+<body>
+<noscript>Unable to load the page. You have to enable Javascript.</noscript>
+<div class="top-menu">
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="assets/images/asteur-notext.png" style="height: 45px" alt="">
+                <div class="logo-text">ASTEUR</div>
+            </a>
+        </div>
+        <div class="nav-bar">
+            <a href="commands.html">명령어</a>
+            <a href="discord.html">디스코드</a>
+            <a href="invite.html">초대하기</a>
+        </div>
+    </nav>
+</div>
+
+<div class="invite-container">
+    <div class="notify">
+        <a>봇을 초대하는 경우 <a href="terms.html" style="color: #7289DA">이용약관</a>
+            <a> 및 </a><a href="privacy.html" style="color: #7289DA">개인정보처리방침</a><a>에 동의하는 것으로
+                간주합니다.</a></a><br>
+    </div>
+    <div id="first">
+        <h1>일반 권한</h1>
+        <input class="inp-cbx" id="8" type="checkbox" onclick="check(this);" style="display: none"/>
+        <label class="cbx" for="8">
+            <span><svg width="12px" height="10px"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span>
+            <span>관리자</span></label><br>
+
+        <input class="inp-cbx" id="128" type="checkbox" onclick="check(this);" style="display: none"/>
+        <label class="cbx" for="128">
+            <span><svg width="12px" height="10px"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span>
+            <span>감사 로그 보기</span></label><br>
+
+        <input class="inp-cbx" id="524288" type="checkbox" onclick="check(this);" style="display: none"/>
+        <label class="cbx" for="524288">
+            <span><svg width="12px" height="10px"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span>
+            <span>서버 인사이트 보기</span></label><br>
+
+        <input class="inp-cbx" id="32" type="checkbox" onclick="check(this);" style="display: none"/>
+        <label class="cbx" for="32">
+            <span><svg width="12px" height="10px"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span>
+            <span>서버 관리하기</span></label><br>
+
+        <input class="inp-cbx" id="268435456" type="checkbox" onclick="check(this);" style="display: none"/>
+        <label class="cbx" for="268435456">
+            <span><svg width="12px" height="10px"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span>
+            <span>역할 관리하기</span></label><br>
+
+        <input class="inp-cbx" id="16" type="checkbox" onclick="check(this);" style="display: none"/>
+        <label class="cbx" for="16">
+            <span><svg width="12px" height="10px"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span>
+            <span>채널 관리하기</span></label><br>
+
+        <input class="inp-cbx" id="2" type="checkbox" onclick="check(this);" style="display: none"/>
+        <label class="cbx" for="2">
+            <span><svg width="12px" height="10px"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span>
+            <span>멤버 추방하기</span></label><br>
+
+        <input class="inp-cbx" id="4" type="checkbox" onclick="check(this);" style="display: none"/>
+        <label class="cbx" for="4">
+            <span><svg width="12px" height="10px"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span>
+            <span>멤버 차단하기</span></label><br>
+
+        <input class="inp-cbx" id="1" type="checkbox" onclick="check(this);" style="display: none"/>
+        <label class="cbx" for="1">
+            <span><svg width="12px" height="10px"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span>
+            <span>초대 코드 만들기</span></label><br>
+
+        <input class="inp-cbx" id="67108864" type="checkbox" onclick="check(this);" style="display: none"/>
+        <label class="cbx" for="67108864">
+            <span><svg width="12px" height="10px"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span>
+            <span>별명 변경하기</span></label><br>
+
+        <input class="inp-cbx" id="134217728" type="checkbox" onclick="check(this);" style="display: none"/>
+        <label class="cbx" for="134217728">
+            <span><svg width="12px" height="10px"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span>
+            <span>별명 관리하기</span></label><br>
+
+        <input class="inp-cbx" id="1073741824" type="checkbox" onclick="check(this);" style="display: none"/>
+        <label class="cbx" for="1073741824">
+            <span><svg width="12px" height="10px"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span>
+            <span>이모티콘 관리</span></label><br>
+
+        <input class="inp-cbx" id="536870912" type="checkbox" onclick="check(this);" style="display: none"/>
+        <label class="cbx" for="536870912">
+            <span><svg width="12px" height="10px"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span>
+            <span>웹후크 관리하기</span></label><br>
+
+        <input class="inp-cbx" id="1024" type="checkbox" checked="checked" onclick="check(this);"
+               style="display: none"/>
+        <label class="cbx" for="1024">
+            <span><svg width="12px" height="10px"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span>
+            <span class="mandatory">채팅 채널 읽기 및 음성채널 보기</span></label><br>
+    </div>
+    <div id="second">
+        <h1>채팅 권한</h1>
+        <input class="inp-cbx" id="2048" type="checkbox" onclick="check(this);" checked="checked" style="display: none"/>
+        <label class="cbx" for="2048">
+            <span><svg width="12px" height="10px"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span>
+            <span class="mandatory">메시지 보내기</span></label><br>
+
+        <input class="inp-cbx" id="4096" type="checkbox" onclick="check(this);" style="display: none"/>
+        <label class="cbx" for="4096">
+            <span><svg width="12px" height="10px"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span>
+            <span>TTS 메시지 보내기</span></label><br>
+
+        <input class="inp-cbx" id="8192" type="checkbox" onclick="check(this);" style="display: none"/>
+        <label class="cbx" for="8192">
+            <span><svg width="12px" height="10px"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span>
+            <span class="recommend">메시지 관리</span></label><br>
+
+        <input class="inp-cbx" id="16384" type="checkbox" checked="checked" onclick="check(this);" style="display: none"/>
+        <label class="cbx" for="16384">
+            <span><svg width="12px" height="10px"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span>
+            <span class="mandatory">링크 첨부</span></label><br>
+
+        <input class="inp-cbx" id="32768" type="checkbox" checked="checked" onclick="check(this);" style="display: none"/>
+        <label class="cbx" for="32768">
+            <span><svg width="12px" height="10px"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span>
+            <span class="mandatory">파일 첨부</span></label><br>
+
+        <input class="inp-cbx" id="65536" type="checkbox" onclick="check(this);" style="display: none"/>
+        <label class="cbx" for="65536">
+            <span><svg width="12px" height="10px"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span>
+            <span>메시지 기록 보기</span></label><br>
+
+        <input class="inp-cbx" id="131072" type="checkbox" onclick="check(this);" style="display: none"/>
+        <label class="cbx" for="131072">
+            <span><svg width="12px" height="10px"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span>
+            <span>모든 역할 멘션하기</span></label><br>
+
+        <input class="inp-cbx" id="262144" type="checkbox" checked="checked" onclick="check(this);"
+               style="display: none"/>
+        <label class="cbx" for="262144">
+            <span><svg width="12px" height="10px"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span>
+            <span class="mandatory">외부 이모티콘 사용하기</span></label><br>
+
+        <input class="inp-cbx" id="64" type="checkbox" checked="checked" onclick="check(this);" style="display: none"/>
+        <label class="cbx" for="64">
+            <span><svg width="12px" height="10px"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span>
+            <span class="mandatory">반응 추가하기</span></label><br>
+
+        <div class="btn">
+            <button class="invite-btn" onclick="goTo()">
+                <span class="circle" aria-hidden="true"><span class="icon arrow"></span></span>
+                <span class="button-text">초대하기</span>
+            </button>
+        </div>
+    </div>
+    <div id="third">
+        <h1>음성 권한</h1>
+        <input class="inp-cbx" id="1048576" type="checkbox" onclick="check(this);" style="display: none"/>
+        <label class="cbx" for="1048576">
+            <span><svg width="12px" height="10px"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span>
+            <span>연결</span></label><br>
+
+        <input class="inp-cbx" id="2097152" type="checkbox" onclick="check(this);" style="display: none"/>
+        <label class="cbx" for="2097152">
+            <span><svg width="12px" height="10px"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span>
+            <span>말하기</span></label><br>
+
+        <input class="inp-cbx" id="512" type="checkbox" onclick="check(this);" style="display: none"/>
+        <label class="cbx" for="512">
+            <span><svg width="12px" height="10px"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span>
+            <span class="unable">동영상</span></label><br>
+
+        <input class="inp-cbx" id="4194304" type="checkbox" onclick="check(this);" style="display: none"/>
+        <label class="cbx" for="4194304">
+            <span><svg width="12px" height="10px"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span>
+            <span>멤버들의 마이크 음소거하기</span></label><br>
+
+        <input class="inp-cbx" id="8388608" type="checkbox" onclick="check(this);" style="display: none"/>
+        <label class="cbx" for="8388608">
+            <span><svg width="12px" height="10px"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span>
+            <span>멤버들의 헤드셋 음소거하기</span></label><br>
+
+        <input class="inp-cbx" id="16777216" type="checkbox" onclick="check(this);" style="display: none"/>
+        <label class="cbx" for="16777216">
+            <span><svg width="12px" height="10px"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span>
+            <span>멤버 이동</span></label><br>
+
+        <input class="inp-cbx" id="33554432" type="checkbox" onclick="check(this);" style="display: none"/>
+        <label class="cbx" for="33554432">
+            <span><svg width="12px" height="10px"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span>
+            <span>음성 감지 사용</span></label><br>
+
+        <input class="inp-cbx" id="256" type="checkbox" onclick="check(this);" style="display: none"/>
+        <label class="cbx" for="256">
+            <span><svg width="12px" height="10px"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span>
+            <span>우선 발언권</span></label><br>
+        <div style="margin-top: 30px">
+            <a class="recommend"><b>초록색</b>: 봇의 추천 권한</a><br>
+            <a class="mandatory"><b>파란색</b>: 봇의 필수 권한</a><br>
+            <a class="unable"><b>빨간색</b>: 봇에 할당될 수 없는 권한</a><br>
+        </div>
+    </div>
+
+</div>
+
+<div class="footer" style="position: absolute; margin: -300px 0;">
+    <div class="footer-logo">
+        <a href="index.html"><img src="assets/images/asteur-notext.png" style="height: 45px" alt="">
+            <div class="logo-text">ASTEUR</div>
+        </a>
+    </div>
+    <div class="bottom-menu">
+        <a href="license.html">라이선스</a>
+        <a href="terms.html">이용약관</a>
+        <a href="privacy.html">개인정보처리방침</a>
+        <a href="discord.html">디스코드</a>
+    </div>
+    <div class="copyright">Copyright #### Asteur, All rights reserved.</div>
+</div>
+</body>
+</html>

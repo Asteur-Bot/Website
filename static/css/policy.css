@@ -1,0 +1,67 @@
+.top-menu {
+    margin-top: -100px;
+}
+
+.policy {
+    position: relative;
+    margin-top: 100px;
+    margin-left: 100px;
+    width: 83%;
+}
+
+.policy > hr {
+    width: 450px;
+    text-align: left;
+    margin: -10px 0;
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.policy > h1 {
+    font-family: GmarketSansLight, sans-serif;
+    color: white;
+    font-size: 40px;
+}
+
+.policy > h2 {
+    font-family: NanumSquare, sans-serif;
+    color: white;
+    font-size: 33px;
+}
+
+.policy > h3 {
+    font-family: NanumSquare, sans-serif;
+    color: white;
+    font-size: 23px;
+}
+
+.policy > p {
+    font-family: NanumSquare, sans-serif;
+    color: white;
+    font-size: 17px;
+    margin-top: -10px;
+    line-height: 28px;
+    margin-bottom: 10px;
+}
+
+.policy > ul > li {
+    color: white;
+    font-family: NanumSquare, sans-serif;
+    font-size: 17px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    line-height: 28px;
+    list-style: none;
+    margin-left: -20px;
+}
+
+.policy > ul > li:before {
+    content: "-";
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 5px 6px 0;
+    margin-top: 3px;
+}
+
